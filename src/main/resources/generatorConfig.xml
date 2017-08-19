@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+
+<generatorConfiguration>
+    <classPathEntry location="/Users/jackshenonly/Documents/workspaces/github/spbdemo/lib/mysql-connector-java-5.1.39.jar"/>
+    <context id="context1">
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                        connectionURL="jdbc:mysql://localhost:3306/spbdb?useUnicode=true&amp;characterEncoding=UTF-8"
+                        userId="jackshen" password="123456"/>
+        <javaModelGenerator targetPackage="com.jackshenonly.spbdemo.entity" targetProject="src/main/java"/>
+        <sqlMapGenerator targetPackage="com.jackshenonly.spbdemo.interfaces" targetProject="src/main/java"/>
+        <javaClientGenerator targetPackage="com.jackshenonly.spbdemo.interfaces" targetProject="src/main/java" type="XMLMAPPER"/>
+
+        <table schema="" tableName="account"/>
+    </context>
+</generatorConfiguration>

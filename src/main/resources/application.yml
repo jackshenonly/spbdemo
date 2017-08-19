@@ -1,0 +1,13 @@
+spring:
+  profiles:
+    active: dev
+
+
+person:
+    name: jackshenonly
+    age: 23
+    number: ${random.int}
+    uuid: ${random.uuid}
+    max: ${random.int(10)}
+    value: ${random.value}
+    greeting: Hi,i'am ${person.name}
